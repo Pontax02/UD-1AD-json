@@ -10,8 +10,16 @@ public class Ratio{
 	@JsonProperty("male")
 	private Object male;
 
+	public void setFemale(Object female){
+		this.female = female;
+	}
+
 	public Object getFemale(){
 		return female;
+	}
+
+	public void setMale(Object male){
+		this.male = male;
 	}
 
 	public Object getMale(){

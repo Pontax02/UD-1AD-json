@@ -22,24 +22,48 @@ public class Stats{
 	@JsonProperty("ATK")
 	private int aTK;
 
+	public void setDEF(int dEF){
+		this.dEF = dEF;
+	}
+
 	public int getDEF(){
 		return dEF;
+	}
+
+	public void setSDF(int sDF){
+		this.sDF = sDF;
 	}
 
 	public int getSDF(){
 		return sDF;
 	}
 
+	public void setSPD(int sPD){
+		this.sPD = sPD;
+	}
+
 	public int getSPD(){
 		return sPD;
+	}
+
+	public void setSAT(int sAT){
+		this.sAT = sAT;
 	}
 
 	public int getSAT(){
 		return sAT;
 	}
 
+	public void setHP(int hP){
+		this.hP = hP;
+	}
+
 	public int getHP(){
 		return hP;
+	}
+
+	public void setATK(int aTK){
+		this.aTK = aTK;
 	}
 
 	public int getATK(){

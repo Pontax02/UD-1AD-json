@@ -8,6 +8,10 @@ public class Response{
 	@JsonProperty("pokedex")
 	private List<PokedexItem> pokedex;
 
+	public void setPokedex(List<PokedexItem> pokedex){
+		this.pokedex = pokedex;
+	}
+
 	public List<PokedexItem> getPokedex(){
 		return pokedex;
 	}

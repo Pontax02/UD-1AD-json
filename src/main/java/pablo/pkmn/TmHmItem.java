@@ -13,12 +13,24 @@ public class TmHmItem{
 	@JsonProperty("name")
 	private String name;
 
+	public void setLvl(String lvl){
+		this.lvl = lvl;
+	}
+
 	public String getLvl(){
 		return lvl;
 	}
 
+	public void setMachine(String machine){
+		this.machine = machine;
+	}
+
 	public String getMachine(){
 		return machine;
+	}
+
+	public void setName(String name){
+		this.name = name;
 	}
 
 	public String getName(){

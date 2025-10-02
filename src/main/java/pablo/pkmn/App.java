@@ -15,7 +15,9 @@ public class App {
         Pkmstorage pkms = new Pkmstorage();
 
 
-        pkms.readFromFile(Path.of("./src/main/java/pablo/pkmn/data/pokemon.json").toFile());
+        List<PokedexItem> pokemonList = pkms.readFromFile(Path.of("./src/main/java/pablo/pkmn/data/pokemon.json").toFile());
+
+        pokemonList.forEach(System.out::println);
 
     }
 }

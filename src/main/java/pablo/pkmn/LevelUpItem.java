@@ -10,8 +10,16 @@ public class LevelUpItem{
 	@JsonProperty("name")
 	private String name;
 
+	public void setLvl(int lvl){
+		this.lvl = lvl;
+	}
+
 	public int getLvl(){
 		return lvl;
+	}
+
+	public void setName(String name){
+		this.name = name;
 	}
 
 	public String getName(){
