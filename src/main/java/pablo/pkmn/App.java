@@ -19,5 +19,7 @@ public class App {
 
         pokemonList.forEach(System.out::println);
 
+        System.out.println(pokemonList.stream().map(PokedexItem::getName).toList());
+
     }
 }

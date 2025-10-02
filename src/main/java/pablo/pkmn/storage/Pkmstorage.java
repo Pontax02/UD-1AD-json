@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pablo.pkmn.PokedexItem;
+import pablo.pkmn.PokedexWrapper;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,13 +26,13 @@ public class Pkmstorage {
         try {
             ObjectMapper mapper = new ObjectMapper();
 
-            List<PokedexItem> listaPokemons = mapper.readValue(
+            PokedexWrapper listaPokemons = mapper.readValue(
                     file,
-                    new TypeReference<List<PokedexItem>>() {}
+                    PokedexWrapper.class
             );
 
 
-            return listaPokemons;
+            return listaPokemons.getPokedex();
 
         } catch (IOException e) {
             e.printStackTrace();
